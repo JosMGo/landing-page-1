@@ -1,0 +1,84 @@
+$danger: indigo;
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.hea{
+    background-image: linear-gradient(rgba(5, 7, 12, 0.75), 
+    rgba(5, 7, 12, 0.75)),
+    url('/assets/img/img-header-princ.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    max-width: 1600px;
+    padding: 40px;
+    margin: 0 auto;
+}
+
+
+/// Background contact ///
+.contacto{
+    background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(/assets/img/img-back-contac.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: auto;
+}
+
+
+/// Logo navegacion ///
+.logo-navegacion{
+    width: 100px;
+    height: 120px;
+  }
+
+/// whatsapp ///
+// Button Whatsapp//
+.container-boton{
+    background: #25d366;
+    border: 1px solid #fff;
+    position: fixed;
+    z-index: 999;
+    border-radius: 50%;
+    right: 25px;
+    bottom: 30px;
+    padding: 20px;
+    transition: ease 0.3s;
+    animation: efecto 1.2s infinite;
+}
+
+.container-boton span i{
+    font-size: 50px;
+}
+
+.container-boton:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.btn-wsp{
+    width: 80px;
+    transition: ease 1s;
+}
+
+
+// animation button whatsapp
+
+@keyframes efecto{
+0%{
+    box-shadow: 0 0 0 0 rgb(62, 219, 240);
+}
+100%{
+    box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
+}
+}
+
+
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
